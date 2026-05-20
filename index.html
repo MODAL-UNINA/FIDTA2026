@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FIDTA 2026 — Federated Intelligence and Digital Twins for Autonomous Systems and IoT</title>
+  <meta name="description" content="FIDTA 2026 is the 2nd edition of the workshop on Federated Intelligence and Digital Twins for Autonomous Systems and IoT, co-located with ACM MobiHoc 2026, Tokyo, Japan." />
+  <link rel="icon" type="image/png" href="assets/fidta-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- SKIP LINK -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- NAV -->
+  <header class="site-header" id="top">
+    <nav class="nav-inner">
+      <a href="#top" class="nav-logo" aria-label="FIDTA 2026 Home">
+        <img src="assets/fidta-logo.png" alt="FIDTA logo" width="40" height="40" class="nav-logo-img" />
+        <span class="nav-logo-text">FIDTA <span class="accent">2026</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-menu" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#topics">Topics</a></li>
+        <li><a href="#dates">Dates</a></li>
+        <li><a href="#submission">Submission</a></li>
+        <li><a href="#organizers">Organizers</a></li>
+        <li><a href="#committee">Committee</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero hero-cover" aria-label="Workshop introduction">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <div class="hero-card" role="region" aria-label="FIDTA 2026 overview">
+        <img src="assets/fidta-logo.png" alt="FIDTA logo" class="hero-card-logo" />
+        <p class="hero-kicker">2nd Edition · Workshop at ACM MobiHoc 2026</p>
+        <h1 class="hero-card-title">Federated Intelligence and Digital Twins for Autonomous Systems and IoT</h1>
+        <p class="hero-card-desc">A focused venue for research on federated learning, digital twins, privacy-preserving intelligence, and distributed AI systems for mobile, autonomous, and resource-constrained environments.</p>
+        <div class="hero-meta" aria-label="Workshop details">
+          <span>Tokyo, Japan</span>
+          <span>November 26, 2026</span>
+          <span>#FIDTA2026</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#submission" class="btn btn-primary">Submission Guidelines</a>
+          <a href="#about" class="btn btn-light">Explore Scope</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Scope</span>
+          <h2 class="section-title">Federated Intelligence Meets Digital Twin Systems</h2>
+          <p class="section-desc">FIDTA 2026 focuses on the co-design of federated learning, decentralized AI, and digital twin technologies for distributed, mobile, and resource-constrained environments.</p>
+        </div>
+        <div class="scope-layout">
+          <article class="scope-feature">
+            <p>The <strong>FIDTA 2026</strong> workshop provides a dedicated forum for research at the intersection of <strong>Federated Learning (FL)</strong> and <strong>Digital Twin (DT)</strong> technologies within distributed, mobile, and resource-constrained networked environments.</p>
+            <p>As IoT infrastructures, autonomous systems, mobile robots, and cyber-physical networks become increasingly widespread, new solutions are needed to address dynamic topologies, privacy constraints, real-time decision-making, and limited computational resources without relying on centralized architectures.</p>
+            <p>FIDTA 2026 builds on the momentum of its inaugural 2025 edition at ACM MobiHoc 2025, expanding the discussion toward agentic AI, large-scale edge deployments, AI-native network architectures, and federated digital twin pipelines.</p>
+          </article>
+          <aside class="scope-highlights" aria-label="Workshop highlights">
+            <div class="scope-chip">
+              <span>FL</span>
+              <strong>Federated Intelligence</strong>
+              <p>Privacy-preserving, collaborative model training across edge devices and autonomous systems.</p>
+            </div>
+            <div class="scope-chip">
+              <span>DT</span>
+              <strong>Digital Twins</strong>
+              <p>Continuously updated virtual representations for prediction, monitoring, and decision support.</p>
+            </div>
+            <div class="scope-chip">
+              <span>Edge</span>
+              <strong>Mobile Systems</strong>
+              <p>Robust intelligence for heterogeneous, dynamic, and resource-constrained networks.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOPICS -->
+    <section class="section section-alt" id="topics">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Research Areas</span>
+          <h2 class="section-title">Topics of Interest</h2>
+          <p class="section-desc">We welcome contributions on algorithms, architectures, systems, protocols, and applications at the intersection of federated intelligence and digital twin technologies.</p>
+        </div>
+        <ul class="topics-grid topics-grid--numbered" role="list">
+          <li class="topic-item">
+            <div class="topic-index">01</div>
+            <div>
+              <h3>Federated Learning for Dynamic Systems</h3>
+              <p>Algorithms for dynamic IoT, mobile, and autonomous systems.</p>
+            </div>
+          </li>
+          <li class="topic-item">
+            <div class="topic-index">02</div>
+            <div>
+              <h3>Real-Time Digital Twin Generation</h3>
+              <p>Generation, synchronization, and update over mobile and heterogeneous networks.</p>
+            </div>
+          </li>
+          <li class="topic-item">
+            <div class="topic-index">03</div>
+            <div>
+              <h3>Communication-Efficient Intelligence</h3>
+              <p>Energy-aware, network-optimized, and resource-adaptive federated intelligence.</p>
+            </div>
+          </li>
+          <li class="topic-item">
+            <div class="topic-index">04</div>
+            <div>
+              <h3>Privacy, Security & Trust</h3>
+              <p>Trustworthy mechanisms for federated digital twin systems.</p>
+            </div>
+          </li>
+          <li class="topic-item">
+            <div class="topic-index">05</div>
+            <div>
+              <h3>Adaptive & Resilient FL Frameworks</h3>
+              <p>Learning frameworks for mobile agents, cyber-physical systems, and dynamic topologies.</p>
+            </div>
+          </li>
+          <li class="topic-item">
+            <div class="topic-index">06</div>
+            <div>
+              <h3>Agentic AI & Foundation Models</h3>
+              <p>Integration of agentic AI and foundation models in resource-constrained mobile networks.</p>
+            </div>
+          </li>
+          <li class="topic-item">
+            <div class="topic-index">07</div>
+            <div>
+              <h3>AI-Native Network Protocols</h3>
+              <p>Protocol design supporting federated digital twin pipelines.</p>
+            </div>
+          </li>
+          <li class="topic-item">
+            <div class="topic-index">08</div>
+            <div>
+              <h3>Multi-Agent Decentralized Architectures</h3>
+              <p>Distributed architectures for collaborative and decentralized federated intelligence.</p>
+            </div>
+          </li>
+          <li class="topic-item">
+            <div class="topic-index">09</div>
+            <div>
+              <h3>Application Domains</h3>
+              <p>Smart cities, connected autonomous vehicles, swarm robotics, industrial IoT, and remote healthcare.</p>
+            </div>
+          </li>
+          <li class="topic-item">
+            <div class="topic-index">10</div>
+            <div>
+              <h3>Deployment & Evaluation</h3>
+              <p>Evaluation in edge clouds, UAV networks, mobile swarms, and real-world testbeds.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- IMPORTANT DATES -->
+    <section class="section" id="dates">
+      <div class="container container-narrow">
+        <div class="section-header">
+          <span class="section-label">Key Deadlines</span>
+          <h2 class="section-title">Important Dates</h2>
+          <p class="section-desc">All deadlines are 23:59 AoE (Anywhere on Earth).</p>
+        </div>
+        <div class="dates-timeline">
+          <div class="date-item">
+            <div class="date-marker"></div>
+            <div class="date-content">
+              <span class="date-label">Paper Submission</span>
+              <span class="date-value">August 31, 2026</span>
+            </div>
+          </div>
+          <div class="date-item">
+            <div class="date-marker"></div>
+            <div class="date-content">
+              <span class="date-label">Camera-ready Deadline</span>
+              <span class="date-value">September 30, 2026</span>
+            </div>
+          </div>
+          <div class="date-item date-item--highlight">
+            <div class="date-marker date-marker--highlight"></div>
+            <div class="date-content">
+              <span class="date-label">Workshop Date</span>
+              <span class="date-value">November 26, 2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUBMISSION -->
+    <section class="section section-alt" id="submission">
+      <div class="container container-narrow">
+        <div class="section-header">
+          <span class="section-label">Call for Papers</span>
+          <h2 class="section-title">Submission Information</h2>
+          <p class="section-desc">Submission instructions and the official submission link will follow as soon as they are made available.</p>
+        </div>
+        <div class="submission-cards">
+          <div class="sub-card">
+            <div class="sub-card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            </div>
+            <h3>Paper Format</h3>
+            <p>All papers must be submitted in <strong>PDF format</strong> using the <strong>ACM double-column conference template</strong>. Submissions should be <strong>8 pages maximum</strong>.</p>
+          </div>
+          <div class="sub-card">
+            <div class="sub-card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+            </div>
+            <h3>Review Process</h3>
+            <p>The review process will be <strong>single-blind</strong>. Each submission will be reviewed by at least <strong>two members</strong> of the Program Committee.</p>
+          </div>
+          <div class="sub-card">
+            <div class="sub-card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Proceedings</h3>
+            <p>Accepted papers are expected to appear in the <strong>ACM Digital Library</strong> as part of the official <strong>MobiHoc 2026 Workshop Proceedings</strong>.</p>
+          </div>
+        </div>
+        <div class="submission-cta submission-cta--notice">
+          <p><strong>Submission portal:</strong> information and links for submission will follow soon.</p>
+          <a href="mailto:francesco.piccialli@unina.it" class="btn btn-primary">Contact Organizers</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORGANIZERS -->
+    <section class="section" id="organizers">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Organizing Committee</span>
+          <h2 class="section-title">Workshop Organizers</h2>
+        </div>
+        <div class="organizers-grid">
+
+          <div class="organizer-card organizer-card--lead">
+            <div class="organizer-avatar" aria-hidden="true">
+              <span>FP</span>
+            </div>
+            <div class="organizer-info">
+              <h3 class="organizer-name">Prof. Francesco Piccialli</h3>
+              <p class="organizer-affil">University of Naples Federico II, Italy</p>
+              <a href="mailto:francesco.piccialli@unina.it" class="organizer-email">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                francesco.piccialli@unina.it
+              </a>
+            </div>
+          </div>
+
+          <div class="organizer-card">
+            <div class="organizer-avatar" aria-hidden="true">
+              <span>DA</span>
+            </div>
+            <div class="organizer-info">
+              <h3 class="organizer-name">Dr. Daniela Annunziata</h3>
+              <p class="organizer-affil">University of Naples Federico II, Italy</p>
+              <a href="mailto:daniela.annunziata@unina.it" class="organizer-email">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                daniela.annunziata@unina.it
+              </a>
+            </div>
+          </div>
+
+          <div class="organizer-card">
+            <div class="organizer-avatar" aria-hidden="true">
+              <span>DC</span>
+            </div>
+            <div class="organizer-info">
+              <h3 class="organizer-name">Prof. David Camacho</h3>
+              <p class="organizer-affil">Universidad Politécnica de Madrid, Spain</p>
+              <a href="mailto:david.camacho@upm.es" class="organizer-email">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                david.camacho@upm.es
+              </a>
+            </div>
+          </div>
+
+          <div class="organizer-card">
+            <div class="organizer-avatar" aria-hidden="true">
+              <span>SA</span>
+            </div>
+            <div class="organizer-info">
+              <h3 class="organizer-name">Prof. Sadi Alawadi</h3>
+              <p class="organizer-affil">Blekinge Institute of Technology (BTH), Sweden</p>
+              <a href="mailto:sadi.alawadi@bth.se" class="organizer-email">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                sadi.alawadi@bth.se
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAM COMMITTEE -->
+    <section class="section section-alt" id="committee">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Tentative Program Committee</span>
+          <h2 class="section-title">Program Committee</h2>
+          <p class="section-desc">The committee will be expanded. Members are listed below.</p>
+        </div>
+        <ul class="pc-grid" role="list">
+          <li class="pc-item"><strong>Antonella Guzzo</strong><span>University of Calabria, Italy</span></li>
+          <li class="pc-item"><strong>Carlo Mazzocca</strong><span>University of Salerno, Italy</span></li>
+          <li class="pc-item"><strong>Dipanwita Thakur</strong><span>University of Calabria, Italy</span></li>
+          <li class="pc-item"><strong>Fabio Giampaolo</strong><span>University of Naples Federico II, Italy</span></li>
+          <li class="pc-item"><strong>Jerry Chun-Wei Lin</strong><span>Silesian University of Technology, Poland</span></li>
+          <li class="pc-item"><strong>Marzia Canzaniello</strong><span>University of Naples Federico II, Italy</span></li>
+          <li class="pc-item"><strong>Valeria Mele</strong><span>University of Naples Federico II, Italy</span></li>
+          <li class="pc-item"><strong>Xiaokang Zhou</strong><span>Kansai University, Japan</span></li>
+          <li class="pc-item"><strong>Valerio Bellandi</strong><span>University of Milan, Italy</span></li>
+          <li class="pc-item"><strong>Giovanna Sannino</strong><span>ICAR-CNR, Italy</span></li>
+          <li class="pc-item"><strong>Ngoc Thanh Nguyen</strong><span>Wroclaw University of Science and Technology, Poland</span></li>
+          <li class="pc-item"><strong>Ahmed M. A. Sayed</strong><span>Queen Mary University of London, UK</span></li>
+          <li class="pc-item"><strong>Madjid Tavana</strong><span>La Salle University, USA</span></li>
+          <li class="pc-item"><strong>Philipp Cimiano</strong><span>Bielefeld University, Germany</span></li>
+          <li class="pc-item"><strong>Rehmat Ullah</strong><span>Newcastle University, UK</span></li>
+          <li class="pc-item"><strong>Rafal Cupek</strong><span>Silesian University of Technology, Poland</span></li>
+          <li class="pc-item"><strong>Ghulam Muhammad</strong><span>King Saud University, Saudi Arabia</span></li>
+          <li class="pc-item"><strong>Kenli Li</strong><span>Hunan University, China</span></li>
+          <li class="pc-item"><strong>Francesco Flammini</strong><span>University of Firenze, Italy</span></li>
+          <li class="pc-item"><strong>Paolo Bellavista</strong><span>University of Bologna, Italy</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FINAL CONTACT -->
+    <section class="final-contact" id="contact" aria-label="Contact information">
+      <div class="final-contact-bg" aria-hidden="true"></div>
+      <div class="final-contact-overlay" aria-hidden="true"></div>
+      <div class="final-contact-card">
+        <span class="final-contact-label">Contact</span>
+        <h2>Questions, updates, and<br/>submission information</h2>
+        <p>Submission system and final workshop program will be announced after confirmation from ACM MobiHoc 2026. For inquiries, contact the organizing team.</p>
+        <a class="final-email-pill" href="mailto:francesco.piccialli@unina.it">francesco.piccialli@unina.it</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="minimal-footer">
+    <p>FIDTA 2026 · Federated Intelligence and Digital Twins for Autonomous Systems and IoT · ACM MobiHoc 2026 · Tokyo, Japan</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
