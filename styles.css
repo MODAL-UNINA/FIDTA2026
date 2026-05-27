@@ -1018,6 +1018,7 @@ a:hover { color: var(--color-primary-hover); }
   text-align: center;
   box-shadow: 0 28px 80px rgba(2, 8, 23, 0.16);
   backdrop-filter: blur(3px);
+  transform: translateY(-45px);
 }
 
 .final-contact-label {
