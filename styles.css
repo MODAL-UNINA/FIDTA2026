@@ -1086,3 +1086,24 @@ a:hover { color: var(--color-primary-hover); }
     max-width: 560px !important;
   }
 }
+
+.supporters-band {
+  margin-top: 38px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  text-align: center;
+}
+
+.supporters-band img {
+  display: block;
+  width: min(100%, 1100px);
+  max-height: 120px;
+  height: auto;
+  object-fit: contain;
+  margin-inline: auto;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
