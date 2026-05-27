@@ -957,10 +957,35 @@ a:hover { color: var(--color-primary-hover); }
   position: relative;
   min-height: 620px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 34px;
   overflow: hidden;
   padding: 96px 24px;
+}
+
+.supporters-band {
+  position: relative;
+  z-index: 1;
+  width: min(1000px, 100%);
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  text-align: center;
+}
+
+.supporters-band img {
+  display: block;
+  width: min(100%, 1000px);
+  max-height: 120px;
+  height: auto;
+  object-fit: contain;
+  margin-inline: auto;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
 }
 
 .final-contact-bg {
@@ -1085,25 +1110,4 @@ a:hover { color: var(--color-primary-hover); }
     grid-template-columns: 1fr !important;
     max-width: 560px !important;
   }
-}
-
-.supporters-band {
-  margin-top: 38px;
-  padding: 0;
-  background: transparent;
-  border: 0;
-  box-shadow: none;
-  text-align: center;
-}
-
-.supporters-band img {
-  display: block;
-  width: min(100%, 1100px);
-  max-height: 120px;
-  height: auto;
-  object-fit: contain;
-  margin-inline: auto;
-  border: 0;
-  box-shadow: none;
-  border-radius: 0;
 }
