@@ -1206,3 +1206,137 @@ a:hover { color: var(--color-primary-hover); }
     grid-template-columns: 1fr;
   }
 }
+
+
+/* ===== FIDTA 2026 WORKSHOP PROGRAM ===== */
+.program-section {
+  background: var(--color-bg);
+}
+.program-section .section-header { margin-bottom: var(--space-8); }
+.program-section .section-title { font-size: clamp(2.25rem, 4.5vw, 3.3rem); }
+.program-summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.4rem;
+  margin-bottom: var(--space-8);
+  padding: 1rem 1.3rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  font-size: 0.89rem;
+  color: var(--color-text-muted);
+}
+.program-summary strong { color: var(--color-text); font-weight: 700; }
+.program-agenda { display: grid; gap: var(--space-4); }
+.program-session {
+  overflow: hidden;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+}
+.program-session-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-5);
+  padding: var(--space-6) var(--space-8);
+  background: var(--color-surface-2);
+  border-bottom: 1px solid var(--color-divider);
+}
+.program-session-index {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  color: var(--color-primary);
+}
+.program-session-header h3 {
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 1.6vw, 1.3rem);
+  font-weight: 800;
+  line-height: 1.35;
+  color: var(--color-text);
+}
+.program-chair {
+  display: grid;
+  gap: 0.18rem;
+  flex: 0 0 auto;
+  min-width: 145px;
+  font-size: 0.82rem;
+  text-align: right;
+  color: var(--color-text-muted);
+}
+.program-chair strong { color: var(--color-text); font-weight: 750; }
+.program-papers { margin: 0; padding: 0; list-style: none; }
+.program-paper {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  align-items: start;
+  gap: var(--space-5);
+  padding: var(--space-6) var(--space-8);
+}
+.program-paper + .program-paper { border-top: 1px solid var(--color-divider); }
+.program-time {
+  display: block;
+  color: var(--color-primary);
+  font-size: 0.88rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  line-height: 1.6;
+}
+.program-paper-details { min-width: 0; }
+.program-paper-details h4 {
+  margin-bottom: 0.55rem;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  font-size: clamp(0.97rem, 1.25vw, 1.08rem);
+  font-weight: 750;
+  line-height: 1.45;
+  text-wrap: pretty;
+}
+.program-authors {
+  font-size: 0.88rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
+.program-milestone {
+  display: grid;
+  grid-template-columns: 130px minmax(0, 1fr);
+  gap: var(--space-5);
+  align-items: center;
+  padding: var(--space-4) var(--space-8);
+  background: var(--color-primary-highlight);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+}
+.program-milestone-details { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.25rem 0.9rem; }
+.program-milestone-details strong { font-weight: 800; font-size: 0.98rem; color: var(--color-text); }
+.program-milestone-details span { font-size: 0.85rem; color: var(--color-text-muted); }
+.program-milestone--break {
+  background: var(--color-surface-2);
+  border-style: dashed;
+}
+.program-milestone--break .program-time { color: var(--color-text-muted); }
+.program-note {
+  margin-top: var(--space-6);
+  padding-left: 1rem;
+  border-left: 3px solid var(--color-accent);
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+.program-note strong { color: var(--color-text); }
+
+@media (max-width: 700px) {
+  .program-session-header { align-items: flex-start; flex-direction: column; padding: 1.25rem; gap: 0.8rem; }
+  .program-chair { display: flex; gap: 0.5rem; min-width: 0; text-align: left; }
+  .program-paper { grid-template-columns: minmax(0, 1fr); gap: 0.55rem; padding: 1.2rem 1.25rem; }
+  .program-milestone { grid-template-columns: minmax(0, 1fr); gap: 0.2rem; padding: 1rem 1.25rem; }
+  .program-summary { justify-content: flex-start; }
+}
